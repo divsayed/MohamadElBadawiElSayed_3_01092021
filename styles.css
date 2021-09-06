@@ -1,0 +1,328 @@
+/* Primaire violet:#9356DC
+   Secondaire rose: #FF79DA 
+   Tertiaire pistach:  #99E2D0
+   Polices
+   Logo et titres: Shrikhand
+   Texte: Roboto */
+
+body{
+    padding: 0;
+    margin: 0;   
+}
+*{
+    text-decoration: none;
+}
+.Ohmyfood{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px; 
+}
+.Ohmyfood img{
+    width: 35%; 
+}
+/*partiez reservez*/
+.reservez{
+    font-family: "Roboto","sans-serif";
+    height: 280px;
+    background-color: #f2f2f2;
+    border-top: 2px solid grey;
+}
+
+.localisation{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 227, 227);
+    font-weight: bold;
+}
+  
+.localisation p{
+    margin-left: 10px;
+}
+.resevMenu{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center;    
+}
+.sTitre{
+    width: 85%;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-family: 'Roboto','serif';
+    color: grey;
+}
+
+.bExplorer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.bExplorer button{
+    padding: 10px 25px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA,#9356DC);
+
+}
+.bExplorer button:hover{
+    box-shadow:none;
+    opacity: 0.6;
+}
+/* partie fonctionnement*/
+.h1Fonction{
+    padding-left: 20px;
+    font-family: "Roboto","sans-serif";
+}
+.blocFonctionnement{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.blocFonctionnement button .fas{
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.blocFonctionnement button{
+    width: 80%;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px grey;
+    border:none;
+    margin-bottom: 25px;
+    display: flex;  
+    align-items: center;
+    font-size: 14px;
+}
+.choisissez::before{
+    content: "1";
+    padding: 2px 6px; 
+    border-radius: 50px;
+    background-color: #9356DC;
+    color: white;
+    position:relative ;
+    left: -30px;
+}
+
+.composez::before{
+    content: "2";
+    padding: 2px 6px; 
+    border-radius: 50px;
+    background-color: #9356DC;
+    color: white;
+    position: relative;
+    left: -30px;
+}
+
+
+/* ou afetr s'appel pseudo-éléments pas pseudo class et fonction avec content
+peut être utilisé pour insérer du contenu avant le contenu d'un élément.*/
+/*il est par défaut un élément inlinePour lui donner une hauteur, un padding, des marges, etc, 
+vous devrez le définir explicitement comme un élément block.*/ 
+.degustez::before{  
+    content: "3";
+    display: block;
+    padding: 2px 6px; 
+    border-radius: 50px;
+    background-color: #9356DC;
+    color: white;
+    position: relative;
+    left: -30px;
+}
+.blocFonctionnement button:hover{
+    background-color: #eecfe5;
+}
+.blocFonctionnement button:hover .fas{
+    color: #9356DC;
+}
+/*partie restaurent*/
+
+
+.restaurants{
+    background-color:#F2F2F2;
+    margin-top: 60px; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+}
+.H1Resto{
+    font-family: "Roboto","sans-serif";
+    margin-left: 30px; 
+}
+.blocRestutants{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+.image{
+    position: relative;
+   flex-basis: 46%;
+    height: 300px;
+    border-radius: 20px;
+    background-color: white;
+    margin:15px;
+    box-shadow:0 0 10px rgb(94, 91, 91)
+}
+.image img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.lesDetailes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 5px 15px;  
+}
+.detailText h2{
+    line-height: 8px;
+    color: black; 
+    font-family: "Roboto","sans-serif" ;  
+}
+.detailText p{
+    font-size: 18px;
+    line-height: 8px;
+    color: black;
+    font-family:"Roboto","sans-serif" ; 
+}
+
+.coeur .far{
+    font-size: 24px;
+    color: #747171;
+}
+.coeur .fas{
+    font-size: 24px;
+    position: absolute;
+    right: 15.5px;/* pour cacher un coeur derrier l'autre*/
+    opacity: 0;
+}
+.coeur .fas:hover{
+    transition: 2s;
+    background: linear-gradient(#9356DC,#FF79DA);
+    opacity:1;
+    -webkit-background-clip: text; /* pour cibler le font interne de coeur  */
+    color: transparent;
+}
+
+.nouveau{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 0 15px;
+    font-weight: bold;
+    background-color: #75e7cb;
+    color: #1e9174;
+    margin: 15px;
+    border-radius: 3px;
+    line-height: 5px;
+    font-size: 18px;
+}
+.nouveau:hover{
+    transition: 3s;
+    background-color: chartreuse;
+}
+.nouveau:hover p{
+    color: rgb(236, 69, 102);
+}
+
+/* FOOTER */
+footer{
+    background-color: #353a39;
+    padding-bottom: 40px;
+}
+.titre{
+    padding-left:25px ;
+}
+.propDev{
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+}
+.propDev p{
+    padding-left: 15px;
+    font-size: 18px;
+    color: white;
+}
+.titrefooter{
+    margin: 0 auto;
+}
+.propDev .fas{
+    color: white;
+   
+}
+.propDev .fa-handshake{
+    transform: rotate(120deg);
+}
+.ohemyfodlogo{
+    color: white;
+    font-size: 30px;
+    font-family: "Shrikhand","sans-serif";
+    line-height: 0;
+    padding: 20px 0 0 25px;
+}
+
+/* mediaqueries page principale */
+
+@media  screen and (min-width:768px){
+    .bExplorer button:hover {
+       color: black;
+       opacity: 0.8;
+    }
+
+    .blocFonctionnement {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    .blocFonctionnement button{
+        width:600px;
+        margin: 20px;
+    }
+    .choisissez::before,.composez::before,.degustez::before{
+        display: none;
+    }
+    .blocFonctionnement .choisissez,  .blocFonctionnement .composez, .blocFonctionnement .degustez {
+        color: white;
+        background: linear-gradient(#FF79DA,#9356DC);
+    }
+    .blocFonctionnement .choisissez:hover, .blocFonctionnement .composez:hover, .blocFonctionnement .degustez:hover {
+        color: black;
+       opacity: 0.8;
+    }
+    .blocFonctionnement button:hover .fas{
+        color: #9356DC;
+    }
+    .ohemyfodlogo{
+        text-align: center;
+    }
+    .titre{
+      display: flex;
+    }
+}
+/*les carte*/
+@media screen and (max-width:767px){
+.image img{
+    width: 330px;
+}
+.margeLeft{
+    margin-left: -10px;
+}
+}
