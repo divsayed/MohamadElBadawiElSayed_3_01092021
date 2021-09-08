@@ -1,4 +1,4 @@
-body{
+body {
     padding: 0;
     margin: 0; 
     animation: page 3s linear;  
@@ -131,7 +131,7 @@ body{
     left: -30px;
 }
 .blocFonctionnement button:hover{
-    background-color: rgba(236, 144, 248, 0.1);
+    background-color: rgba(239, 200, 243, 0.1);
     
 }
 .blocFonctionnement button:hover .fas{
@@ -194,7 +194,7 @@ body{
 .coeur .fas{
     font-size: 24px;
     position: absolute;
-    right: 15.5px;/* pour cacher un coeur derrier l'autre*/
+    right: 15.5px;
     opacity: 0;
 }
 .coeur .fas:hover{
@@ -267,9 +267,9 @@ footer{
     border-left: 10px solid #cf42b1;
     border-right: 10px solid #9225f7;
     border-radius: 50%;   
-    margin: auto;  /*pour deplacer au centre de la page horizontal avec absolute*/
+    margin: auto;  
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0; /* pour deplacer verticale au centre de la page */
+    top: 0; left: 0; right: 0; bottom: 0;
     animation: cercle 2s linear  ;
     animation-fill-mode:both;
 }
@@ -298,38 +298,24 @@ footer{
 /* mediaqueries page principale */
 
 @media  screen and (min-width:768px){
-    .bExplorer button:hover {
-       color: black;
-       opacity: 0.8;
-    }
+
     .blocFonctionnement {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
     .blocFonctionnement button{
-        width:600px;
         margin: 20px;
     }
     .choisissez::before,.composez::before,.degustez::before{
         display: none;
     }
-    .blocFonctionnement .choisissez,  .blocFonctionnement .composez, .blocFonctionnement .degustez {
-        color: white;
-        background: linear-gradient(#FF79DA,#9356DC);
-    }
-    .blocFonctionnement .choisissez:hover, .blocFonctionnement .composez:hover, .blocFonctionnement .degustez:hover {
-        color: black;
-       opacity: 0.8;
-    }
-    .blocFonctionnement button:hover .fas{
-        color: #9356DC;
-    }
+    /*le footer*/
     .ohemyfodlogo{
         text-align: center;
     }
     .titre{
-      display: flex;
+        display: flex;
     }
 }
 /*les carte*/
@@ -337,7 +323,7 @@ footer{
 .image img{
     width: 330px;
 }
-/*footer*/
+/*le footer*/
 .margeLeft{
     margin-left: -10px;
 }
