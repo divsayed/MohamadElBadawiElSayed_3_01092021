@@ -77,9 +77,8 @@ body {
 }
 .btnPlats{
     margin-bottom: 10px;
-    height: 60px;
+    height: 70px;
     background-color: white;
-    line-height: 5px;
     border-radius: 15px;
     padding-left: 10px;
     cursor: pointer;
@@ -139,7 +138,7 @@ body {
     align-items: flex-end; 
 }
 .prixicon .prix{
- padding: 13px;
+ padding: 0px 25px 10px 10px;
  font-family:roboto,sans-serif ;
 }  
 .icon{ 
@@ -148,22 +147,20 @@ body {
     justify-content: center;
     background-color: #99E2D0;
     align-items: center;
-    height: 60px;
+    height: 70px;
     border-radius: 0 15px 15px 0;
     position: relative;
     overflow: hidden;  
 }
-.platsh3{
+.platsh3, .btnPlats h3{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-family:roboto,sans-serif ;
 }
 .btnPlats h3{
-    text-overflow: ellipsis;
-    white-space:nowrap ;
+    margin: 9px auto;
 }
-
 .icon .fas{
     padding: 5px;
     background-color: white;
