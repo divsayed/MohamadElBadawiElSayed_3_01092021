@@ -1,0 +1,284 @@
+
+body {
+    padding: 0;
+    margin: 0;   
+}
+*{
+    text-decoration: none;
+}
+.Ohmyfood {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:15px 40px 15px 15px ; 
+
+}
+.Ohmyfood img {
+     width: 35%;
+     margin: 0 auto ;
+}
+.Ohmyfood .fas {
+    color: #444040;
+    font-size: 20px;
+}
+/* partie Menu la palette du gout*/
+.couverture img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;   
+}
+.coeurMenu .far {
+    font-size: 24px;
+    color: #747171;
+}
+.coeurMenu .fas {
+    font-size: 24px;
+    position: relative;
+    right: 23.5px;/* pour cacher un coeur derrier l'autre*/
+    opacity: 0;
+}
+.coeurMenu .fas:hover {
+    transition: 2s;
+    background: linear-gradient(#9356DC,#FF79DA);
+    opacity:1;
+    -webkit-background-clip: text; /* pour cibler le font interne de coeur  */
+    color: transparent;
+    cursor: pointer;
+}
+.menuH2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family:"Shrikhand",serif ;
+}
+.cartelaPalette {
+    background-color:#f2f2f2 ;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;   
+    padding: 15px 10px 60px; 
+    animation: shadow 2s linear; 
+    margin-top: -25px; 
+}
+@keyframes shadow {
+    0% {
+        opacity: 0; 
+    }
+    70% {
+        opacity: 1;      
+    }
+}
+.entree{
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+    line-height: 0;
+    margin-bottom: 10px;
+    font-family: "Roboto","sans-serif";
+}
+.btnPlats{
+    margin-bottom: 10px;
+    height: 60px;
+    background-color: white;
+    line-height: 5px;
+    border-radius: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+    box-shadow: 2px 4px 12px rgb(216, 214, 214);
+}
+.b1{
+    animation: b1 1s linear 1s;
+}
+@keyframes b1{
+    0%{
+        opacity: 0;
+        transform: translateY(5px);
+        
+     
+    }
+    100%{
+       opacity: 1;
+       transform: translateY(0px);      
+}
+}
+.b2{
+    animation: b2 1s linear 1.2s;
+}
+@keyframes b2{
+    0%{
+       opacity: 0;
+       transform: translateY(5px);
+       
+    }
+    100%{
+       opacity: 1;
+       transform: translateY(0);     
+    }
+}
+.b3{
+    animation: b3 1s linear 1.4s;
+}
+@keyframes b3{
+    0%{
+        opacity: 0;
+        transform: translateY(5px);
+       
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+      
+    }
+}
+.contenuPlats{
+    display: flex;
+    justify-content:space-between; 
+}
+.prixicon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+.prixicon .prix{
+ padding: 13px;
+ font-family:roboto,sans-serif ;
+}  
+.icon{ 
+    width: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #99E2D0;
+    align-items: center;
+    height: 60px;
+    border-radius: 0 15px 15px 0;
+    position: relative;
+    overflow: hidden;  
+}
+.platsh3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family:roboto,sans-serif ;
+}
+.btnPlats h3{
+    text-overflow: ellipsis;
+    white-space:nowrap ;
+}
+
+.icon .fas{
+    padding: 5px;
+    background-color: white;
+    border-radius: 50%;
+    color: #99E2D0;
+    position: absolute;
+    right: 30%; 
+    transition: 0.4s ease-out; 
+}
+.btnPlats:hover .icon{
+    width: 60px;
+    transition: .5s linear;
+}
+.btnPlats:hover .fas{
+    transform: rotate(360deg);
+  
+}
+/*@media  screen and (min-width:768px){
+    .flex{
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .btnPlats{
+        flex-basis: 30%;
+        overflow: hidden;
+    }
+}*/
+.margeEntreplat {
+    margin: 45px auto;
+}
+.btnCommander {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.btnCommander button {
+    padding: 10px 35px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA,#9356DC);
+}
+.btnCommander button:hover {
+    box-shadow:none;
+    opacity: 0.6;
+}
+/* FOOTER */
+footer {
+    background-color: #353a39;
+    padding-bottom: 30px;
+  
+}
+.titre {
+    padding-left:25px ;
+}
+.propDev {
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+}
+.propDev p {
+    padding-left: 15px;
+    font-size: 18px;
+    color: white;
+}
+.titrefooter {
+    margin: 0 auto;
+}
+.propDev .fas {
+    color: white;
+   
+}
+.propDev .fa-handshake {
+    transform: rotate(120deg);
+}
+.ohemyfodlogo {
+    color: white;
+    font-size: 30px;
+    font-family: "Shrikhand","sans-serif";
+    line-height: 0;
+    padding: 20px 0 0 25px;
+}
+
+
+/* mediaqueries page  */
+
+@media  screen and (min-width:768px){
+.ohemyfodlogo {
+    text-align: center;
+    }
+.titre {
+    display: flex;
+}
+  
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+}
+  
+.flex .btnPlats {
+  
+   width: 31%;
+   margin:10px;  
+}
+}
+/*le footer*/
+@media screen and (max-width:767px){
+
+.margeLeft {
+   margin-left: -10px;
+}
+}
+    
