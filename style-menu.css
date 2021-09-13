@@ -64,7 +64,7 @@ body {
     0% {
         opacity: 0; 
     }
-    70% {
+    100% {
         opacity: 1;      
     }
 }
@@ -90,9 +90,7 @@ body {
 @keyframes b1{
     0%{
         opacity: 0;
-        transform: translateY(5px);
-        
-     
+        transform: translateY(5px);      
     }
     100%{
        opacity: 1;
@@ -105,8 +103,7 @@ body {
 @keyframes b2{
     0%{
        opacity: 0;
-       transform: translateY(5px);
-       
+       transform: translateY(5px);   
     }
     100%{
        opacity: 1;
@@ -148,7 +145,8 @@ body {
     height: 70px;
     border-radius: 0 15px 15px 0;
     position: relative;
-    overflow: hidden;  
+    overflow: hidden; 
+    transition: .2s ease-in; 
 }
 .platsh3, .btnPlats h3{
     white-space: nowrap;

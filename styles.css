@@ -96,7 +96,7 @@ body {
     padding: 20px;
     border-radius: 20px;
     font-weight: bold;
-    box-shadow: 2px 4px 8px rgb(204, 201, 201);
+    box-shadow: 2px 4px 8px rgb(224, 219, 219);
     border:none;
     margin-bottom: 25px;
     display: flex;  
@@ -131,7 +131,8 @@ body {
     left: -30px;
 }
 .blocFonctionnement button:hover{
-    background-color: rgba(239, 200, 243, 0.1);
+    background-color: rgba(104, 5, 119, 0.1);
+    transition: .5s;
     
 }
 .blocFonctionnement button:hover .fas{
@@ -275,22 +276,22 @@ footer{
 }
 @keyframes cercle{  
     0% {opacity: 1;
-        transform: rotate(0deg) scale(1);   
+        transform: rotate(0deg) scale(1) translateY(0%);   
     }
     20% {opacity: 0;
-        transform: rotate(3600deg) scale(1);  
+        transform: rotate(3600deg) scale(1) ;  
     }
     40% {opacity: 1;
         transform: rotate(0deg) scale(1);   
     }
     60% {opacity: 0;
-        transform: rotate(360deg) scale(1);   
+        transform: rotate(360deg) scale(1) ;   
     }
     80% {opacity: 1;
         transform: rotate(0deg) scale(1);    
     }
     100% {opacity: 0; 
-        transform: rotate(360deg) scale(0);   
+        transform: rotate(360deg) scale(0) translateY(150%);   
     } 
 }
 
